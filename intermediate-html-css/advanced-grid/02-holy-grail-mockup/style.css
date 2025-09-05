@@ -6,7 +6,7 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template-rows: 200px 100px 1fr 100px;
+  grid-template-rows: 100px 100px 1fr 25px;
   grid-template-columns: 1fr 5fr;
   grid-template-areas:
     "header header"
@@ -27,13 +27,15 @@
   background-color: #393f4d;
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "logo links";
+  align-items: center;
 }
 
 .logo {
   grid-area: logo;
+  justify-self: left;
 }
 
 .menu {
